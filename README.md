@@ -144,19 +144,36 @@ WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ENCODING 'UTF8');
 
 ## 🚀 How to Run
 
-```bash id="zepto_sql_3"
-git clone https://github.com/amlanmohanty/zepto-SQL-data-analysis-project.git
-cd zepto-SQL-data-analysis-project
+```bash
+git clone https://github.com/hanumanth112/Zepto-Inventory-Data-Analysis-PostgreSQL.git
+cd Zepto-Inventory-Data-Analysis-PostgreSQL
 ```
 
-### Steps:
+### Steps to Execute:
 
-1. Create PostgreSQL database
-2. Run SQL file (`zepto_SQL_data_analysis.sql`)
-3. Import dataset (ensure UTF-8 encoding)
-4. Execute queries step-by-step
+1. Create a new database in PostgreSQL
+2. Open `zepto_SQL_data_analysis.sql`
+3. Run the script to create the table and queries
+4. Import the dataset (`zepto_v2.csv`)
+
+   * Ensure file is in **UTF-8 format**
+5. Execute queries step-by-step to reproduce analysis
 
 ---
+
+### 💡 Tip
+
+If `\copy` command fails:
+
+* Use **pgAdmin Import Tool**
+* Or update file path according to your system
+
+Example:
+
+```sql
+\copy zepto FROM 'C:/your-path/zepto_v2.csv' WITH (FORMAT csv, HEADER true);
+
+```
 
 ## 📈 Business Value
 
